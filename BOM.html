@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM hierarchy</title>
+    <script>
+        function bodyload()
+        {
+            window.document.Images[0].src="bmw.jpg";
+            window.document.forms[0].elements[0].value="john";
+            window.document.forms[1].elements[0].value="submit";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+   <div>
+       <img width="200"height="200"border="2">
+       <form>
+           <h2>form9</h2>
+           <input type="text">
+       </form>
+          <form>
+           <h2>form2</h2>
+       <input type="button"
+          </form>
+   </div>
+</body>
+</html>

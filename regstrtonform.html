@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function formRegister(){
+            var userId = document.getElementById('userId').value;
+            var pwd = document.getElementById('pwd').value;
+            alert("user entered login : "+userId+"  password : "+pwd);
+        }
+        function callRegister(){
+            location.href=('smplregste.html');
+        }
+    </script>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>User Name:</td>
+            <td>
+                <input type="text"id="userId"placeholder="Enter userid">
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type="password"id="pwd"placeholder="Enter Password">
+            </td>
+        </tr>
+    </table>
+    <input type="button"value="click here"onclick="formRegister()">
+     <input type="button"value="Register "onclick="location.href='smplregste.html'">
+</form>
+</body>
+</html>

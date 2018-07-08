@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title email</title>
+    <script>
+        function Verify()
+        {
+            var email=ducument.getElementById("txtEmail").value;
+            var msg=document.getElementById("msg");
+            var atpos=email.indexOf("@");
+            var dotpos=email.lastindexOf(".");
+            if(atpos<=1 && (dotpos-atpos)<2)
+            {
+                msg.innetHTML="invalid Email";
+            }
+              else
+            {
+                document.write("Email verified");
+            }
+        }
+    </script>
+</head>
+<body>
+         <div align="center">
+             <form>
+                 Enter Email:<input type="text"id ="txtEmail">
+                 <span id="msg"></span><br><br>
+                 <input type="button"value="verify"onclick="Verify()">
+             </form>
+         </div>
+</body>
+</html>
